@@ -14,6 +14,7 @@ export default function Search({ onCloseSearch }) {
 
   useEffect(() => {
     return () => onCloseSearch();
+    // eslint-disable-next-line
   }, [redirectPage]);
 
   const runSearch = () => {

@@ -1,3 +1,7 @@
+/**
+ Component to manage and output the Country's Menu
+*/
+
 import { useState } from "react";
 import "./menu.css";
 
@@ -15,6 +19,7 @@ const options = [
     hRefy   : "uk"
   }
 ];
+
 
 export default function MenuButton() {
 

@@ -1,3 +1,7 @@
+/**
+ Upper bar of the Application
+*/
+
 export default function HeaderBar() {
 
   const message = "Free Shipping On Orders Over $49"

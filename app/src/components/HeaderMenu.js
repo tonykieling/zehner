@@ -1,3 +1,7 @@
+/**
+ Component to mount the main menu 
+*/
+
 import momsLogo from "../icons/4momsIcon.png";
 import Country from "./Country.js";
 import { FiSearch } from "react-icons/fi";

@@ -2,9 +2,8 @@ import { FiSearch } from "react-icons/fi";
 import { CgClose } from "react-icons/cg";
 import { useState, useEffect } from "react";
 import { Redirect } from "react-router-dom";
-
-
 import "./search.css";
+
 
 export default function Search({ onCloseSearch }) {
 
@@ -23,7 +22,7 @@ export default function Search({ onCloseSearch }) {
 
   return(
     <>
-      { redirectPage && <Redirect to = "/search" />}
+      { redirectPage && <Redirect to = {{pathname: "/search", text}}/>}
       <div className = "header-menu">
         <FiSearch />
         <input

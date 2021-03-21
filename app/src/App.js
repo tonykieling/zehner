@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
+/**
+  This is the root component, responsable to routing
+*/
+
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 import HeaderBar from "./components/HeaderBar.js";
@@ -12,17 +17,30 @@ function App() {
 
   return (
     <Router>
+      {/* back bar */}
       <HeaderBar />
+
+      {/* HeaderMenu component */}
       <HeaderMenu />
-      <Route exact path = "/">
-        <Home />
-      </Route>
-      <Route exact path = "/about">
-        <About />
-      </Route>
-      <Route exact path = "/search">
-        <SearchResult />
-      </Route>
+      <Switch>
+
+        {/* Home page Route */}
+        <Route exact path = "/">
+          <Home />
+        </Route>
+
+        {/* About page Route */}
+        <Route exact path = "/about">
+          <About />
+        </Route>
+
+        {/* Search page Route */}
+        <Route 
+          exact
+          path = "/search"
+          component = { SearchResult }
+        />
+      </Switch>
       <Footer />
     </Router>
   );

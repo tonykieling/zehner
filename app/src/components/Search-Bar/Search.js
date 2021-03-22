@@ -22,7 +22,7 @@ export default function Search({ onCloseSearch }) {
 
   return(
     <>
-      { redirectPage && <Redirect to = {{pathname: "/search", text}}/>}
+      { redirectPage && <Redirect to = {{pathname: "/search", state: text}}/>}
       <div className = "header-menu">
         <FiSearch />
         <input
